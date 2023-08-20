@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul IMC</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="backgroundColorGrey">
+      <div class="titre">
+        <h1 class="textShadowWhite">Calcul d'IMC</h1>
+      </div>
+      <div class="divInput">
+        <div class="divCentimetres">
+          <h2 class="textShadowWhite">Votre taille en centimètres, Ex: 180</h2>
+          <input type="text" placeholder="Votre taille en cm" id="inputTaille">
+        </div>
+        <div class="divPoids">
+          <h2 class="textShadowWhite">Votre poids en Kg, Ex: 80</h2>
+          <input type="text" placeholder="Votre poids en kg" id="inputPoids">
+        </div>
+      </div>
+      <div id="btnCalcul">
+        <button class="textShadowWhite">Calculer un IMC</button>
+      </div>
+      <div id="resultatIMC">
+        <p class="resultat textShadowWhite">0</p>
+      </div>
+      <div id="textIMC">
+        <p class="textResultat textShadowWhite">En attente du résultat...</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="textShadowWhite">Calculateur d'imc realisé par</p>
+      <span id="identite">jeremy detailleur</span>
+      <div class="links textShadowWhite">
+        <a href="https://www.linkedin.com/in/jeremydetailleur/"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+        <a href="https://github.com/JeremyCamp"><i class="fa-brands fa-square-github" style="color: #000000;"></i></a>
+        <i class="fa-solid fa-globe"><a></a></i>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/3adf6fa324.js" crossorigin="anonymous"></script>
+  </body>
+</html>

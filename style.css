@@ -1,0 +1,188 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.backgroundColorGrey {
+  background-color: rgb(221, 221, 221);
+  width: 80%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20%;
+  margin-left: 35%;
+}
+
+.titre h1 {
+  text-align: center;
+}
+
+.divInput {
+  display: flex;
+  justify-content: space-around;
+  height: 25%;
+}
+
+.divCentimetres {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divPoids {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divInput input {
+  width: 95%;
+  height: 40%;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  height: 60%;
+  overflow: hidden;
+}
+
+#btnCalcul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 187, 0);
+  font-size: 17px;
+}
+
+#resultatIMC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.resultat {
+  font-size: 30px;
+}
+
+#textIMC {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  font-size: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 80%;
+  font-size: 23px;
+}
+
+#identite {
+  color: white;
+  font-size: 30px;
+  text-shadow: black 1px 1px 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  font-size: 40px;
+}
+
+.textShadowWhite {
+  text-shadow: white 1px 1px 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-top: 10px;;
+  }
+  .backgroundColorGrey{
+    width: 60%;
+    height: 650px;
+  }
+
+  .titre h1 {
+    font-size: 50px;
+  }
+
+  .divCentimetres h2, .divPoids h2 {
+    font-size: 25px;
+  }
+
+  #inputTaille, #inputPoids {
+    height: 70px;
+    font-size: 25px;
+    padding-left: 5px;
+  }
+
+  button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .resultat{
+    font-size: 40px;
+  }
+
+  #textIMC {
+    font-size: 30px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    width: 40%;
+  }
+}
